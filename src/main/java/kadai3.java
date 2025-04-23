@@ -37,9 +37,8 @@ public class kadai3 {
 		System.out.println("こんにちは、「" + namae + "」さん！");
 
 		//問6：******************************
-		Scanner sc = new Scanner(System.in);
 		System.out.println("名前入力してください-->");
-		String namae = sc.next();
+		String namae1 = sc.next();
 
 		System.out.println("年齢入力してください-->");
 		String age = sc.next();
@@ -47,41 +46,28 @@ public class kadai3 {
 		System.out.println("誕生日入力してください-->");
 		String brithday = sc.next();
 
-		String res = String.format("名前：%s, 年齢：%s, 誕生日：%s", namae, age, brithday);
+		String res = String.format("名前：%s, 年齢：%s, 誕生日：%s", namae1, age, brithday);
 
 		System.out.println(res);
 
 		
 		//問７：******************************
-		Scanner sc = new Scanner(System.in);
 		System.out.println("商品命入力してください-->");
-		String namae = sc.next();
+		String product = sc.next();
 		
 		System.out.println("価格入力してください-->");
 		double money = sc.nextDouble();
 		
 		System.out.println("購入個数入力してください-->");
-		int num = sc.nextInt();
+		int num1 = sc.nextInt();
 		
 		
-		double sum = num * money;
+		double sum1 = num1 * money;
 		
-		System.out.println("合計金額：" + sum);
+		System.out.println("合計金額：" + sum1);
 		
-		System.out.println("商品: "+ namae + "は、価格：" + money + "円なので、"+ 
-				num +"個買うと" + sum+"円です。");
-		
-		
-		//問８：******************************
-		-45;
-		
-		
-		//問9：******************************
-		14;
-
-		
-		//問10：******************************
-		avogr;
+		System.out.println("商品: "+ product + "は、価格：" + money + "円なので、"+ 
+				num1 +"個買うと" + sum1+"円です。");
 		
 		
 		//問11：******************************
@@ -98,42 +84,6 @@ public class kadai3 {
         long day = ChronoUnit.DAYS.between(today, next);
         
         System.out.println("今度の誕生日まで後"+day+"日");
-		
-        
-      //問12：******************************
-        B,D
-        
-        
-      //問13：******************************
-        5
-        
-        
-      //問14：******************************
-        B. MAX = 200;
-        
-        
-      //問15：******************************
-        9
-        
-        
-      //問16：******************************
-        //×、ローカル変数 x が初期化されていない;
-        
-        
-      //問17：******************************
-        B
-        
-        
-      //問1８：******************************
-        B
-        
-        
-      //問19：******************************
-        A
-        
-        
-      //問20：******************************
-        A
         
 	}
 
