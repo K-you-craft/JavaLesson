@@ -17,7 +17,7 @@ public class ChecknumberList {
 			moji.add("small");
 		}
 		
-		System.out.println(moji);
+		System.out.println(moji); 
 	}
 
 }
