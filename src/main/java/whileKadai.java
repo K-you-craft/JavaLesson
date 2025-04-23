@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class whileKadai {
 
 	public static void main(String[] args) {
+		
+		//********* While **********************
 		int count = 1;
 		
 		while(count <= 10) {
@@ -35,8 +37,40 @@ public class whileKadai {
 		System.out.println("合計は" + sum);
 		
 		
+		//********* Do - While **********************
+		
+		count = 1;
+		
+		do {
+			System.out.print(count + " ");
+			
+			count++;
+			
+		}while (count <= 10);
+		
+		System.out.println();
+		count = 1;
+		sum = 0;
 		
 		
+		do {
+			sum += count;
+			count++;
+			
+		}while (count <= 100);
+		
+		System.out.println("合計は" + sum);
+		
+		
+		sum = 0;
+		select = sc.nextInt();
+		do {
+			sum += count;
+			count++;
+			
+		}while (count <= 100);
+		
+		System.out.println("合計は" + sum);
 	}
 
 }
