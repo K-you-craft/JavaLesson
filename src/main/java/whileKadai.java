@@ -73,130 +73,121 @@ public class whileKadai {
 		} while (select != 0);
 
 		System.out.println("合計は" + sum);
-		
-		
+
 		//********* for文 **********************
-		for(int i = 1 ; i <= 10 ; i++) {
+		for (int i = 1; i <= 10; i++) {
 			System.out.print(i + " ");
 		}
-		
-		
+
 		System.out.println();
 		sum = 0;
-		for(int i = 1 ; i <= 100 ; i++) {
+		for (int i = 1; i <= 100; i++) {
 			sum += i;
 		}
 		System.out.println("1から100までの整数の合計は" + sum);
-		
-		int[] arr = new int[10]; 
-		for(int i = 0; i < arr.length ; i++) {
-			if(i == 0 || i == 1) {
+
+		int[] arr = new int[10];
+		for (int i = 0; i < arr.length; i++) {
+			if (i == 0 || i == 1) {
 				arr[i] = 1;
-			}else {
-				arr[i] = arr[i-1] + arr[i-2];
+			} else {
+				arr[i] = arr[i - 1] + arr[i - 2];
 			}
 		}
 		System.out.print("フィボナッチ数列:");
-		
-		for(int i = 0 ;i <arr.length;i++) {
+
+		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
-		
+
 		//********* 拡張for文 **********************
 		System.out.println();
-		int[] num = {1,2,3,4,5};
-		for(int i= 0; i < num.length ; i++) {
+		int[] num = { 1, 2, 3, 4, 5 };
+		for (int i = 0; i < num.length; i++) {
 			System.out.print(num[i] + " ");
 		}
-		
+
 		System.out.println();
 		List<String> mojiList = new ArrayList<>();
 		count = 0;
-		while(count < 3) {
+		while (count < 3) {
 			System.out.println("追加した文字を入力してください-->");
 			String a = sc.next();
 			mojiList.add(a);
-			
+
 			count++;
 		}
-		
+
 		System.out.println(mojiList);
-		
-		
-		
-		int[] arr2 = {2,4,6};
+
+		int[] arr2 = { 2, 4, 6 };
 		sum = 0;
-		for(int i = 0; i < arr2.length; i++) {
+		for (int i = 0; i < arr2.length; i++) {
 			sum += arr2[i];
 		}
 		System.out.println("合計は" + sum);
-		
-		
-		
-        int[] numbers = {1, 2, 3, 4, 5};
-        
-		for(int i = 0; i < numbers.length; i++) {
-			System.out.print( numbers[i] +"," );
+
+		int[] numbers = { 1, 2, 3, 4, 5 };
+
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.print(numbers[i] + ",");
 		}
-		
+
 		System.out.println();
-		
-        sum = 0;
-		for(int i = 0; i < numbers.length; i++) {
+
+		sum = 0;
+		for (int i = 0; i < numbers.length; i++) {
 			sum += numbers[i];
 		}
-        System.out.println("合計: " + sum);
-        
-        
-        
-        
-        List<String> names = new ArrayList<>();
-        names.add("Alice");
-        names.add("Bob");
-        names.add("Charlie");
-        
-        System.out.println(names);
-        
-        
-        //************ break ************************
+		System.out.println("合計: " + sum);
 
-        for(int i= 1; i <= 10 ; i++) {
-        	if(i > 5) {
-        		break;
-        	}
-        	System.out.print(i + " ");
-        }
-        
-        
-        
-        System.out.println();
-        int[] arr3 = {1,2,3,4,5,6,7,8,9,10};
-        for(int i= 1; i <= arr.length ; i++) {
-        	if(i > 6) {
-        		break;
-        	}
-        	System.out.print(i + " ");
-        }
-        
-        
-        System.out.println();
-        int [][]arr4 = {
-        		{1,2,3},
-        		{4,5},
-        		{6,7,8}
-        };
-        
-        for(int i= 0; i < arr4.length ; i++) {
-        	for(int j = 0 ; j < arr4[i].length ; j++) {
-        		if(arr4[i][j] == 5) {
-        			break; // 外側のループまで一気に抜ける
-        		}
-        		System.out.print(arr4[i][j] + " ");
-        		
-        	}
-        }
-        
-        
+		List<String> names = new ArrayList<>();
+		names.add("Alice");
+		names.add("Bob");
+		names.add("Charlie");
+
+		System.out.println(names);
+
+		//************ break ************************
+
+		for (int i = 1; i <= 10; i++) {
+			if (i > 5) {
+				break;
+			}
+			System.out.print(i + " ");
+		}
+
+		System.out.println();
+		int[] arr3 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		for (int i = 1; i <= arr.length; i++) {
+			if (i > 6) {
+				break;
+			}
+			System.out.print(i + " ");
+		}
+
+		System.out.println();
+		int[][] arr4 = {
+				{ 1, 2, 3 },
+				{ 4, 5 },
+				{ 6, 7, 8 }
+		};
+
+		int flag = 0;
+		for (int i = 0; i < arr4.length; i++) {
+			for (int j = 0; j < arr4[i].length; j++) {
+				if (arr4[i][j] == 5) {
+					flag = 1;
+					break;
+				}
+				System.out.print(arr4[i][j] + " ");
+			}
+			
+			if(flag == 1) {
+				break;
+			}
+		}
+
 	}
 
 }
