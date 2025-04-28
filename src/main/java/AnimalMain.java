@@ -7,6 +7,11 @@ public class AnimalMain {
 		
 		cat.makeSound();
 		dog.makeSound();
+		
+		System.out.println("-------------------------");
+		
+		Animal newDog = new Dog();
+		newDog.makeSound();
 	}
 
 }
