@@ -6,13 +6,13 @@ public class BankAccountMain {
 		BankAccount b = new BankAccount();
 		Scanner sc = new Scanner(System.in);
 
-		b.name = "佐藤";
-		b.account = 20150425;
-		b.money = 500000;
+		b.setName("佐藤");
+		b.setAccount(20150425);
+		b.setMoney(500000);
 
-		System.out.println("口座番号：" + b.name);
-		System.out.println("口座名義：" + b.account);
-		System.out.println("残高：" + b.money);
+		System.out.println("口座番号：" + b.getName());
+		System.out.println("口座名義：" + b.getAccount());
+		System.out.println("残高：" + b.getMoney());
 		
 		System.out.println("---------------------------------");
 		System.out.println("1.入金　2.引き出し(数字を入力してください)");
@@ -34,9 +34,9 @@ public class BankAccountMain {
 }
 
 class BankAccount {
-	int account;
-	String name;
-	double money;
+	private int account;
+	private String name;
+	private double money;
 
 	public void getDeposit(double deposit) {
 		money += deposit;
@@ -52,5 +52,31 @@ class BankAccount {
 			System.out.println("残高は：" + money);
 		}
 	}
+
+	public int getAccount() {
+		return account;
+	}
+
+	public void setAccount(int account) {
+		this.account = account;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getMoney() {
+		return money;
+	}
+
+	public void setMoney(double money) {
+		this.money = money;
+	}
+	
+	
 
 }
