@@ -3,13 +3,19 @@ package abstrctKadai;
 abstract class Animal {
 	String name;
 	
-	public Animal(String name) {
-		this.name = name;
-	}
-
 	public abstract void makeSound();
 	
-	void sleep() {
+	public void sleep() {
 		System.out.println(name + "が寝ている");
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
 }

@@ -1,16 +1,21 @@
 package abstrctKadai;
 
 public class Rectangle extends Shape{
-	double n;
+	private double w,h;
 
-	@Override
-	public double calculateArea(double n) {
-		return n * n;
+	public Rectangle(double w, double h) {
+		this.w = w;
+		this.h = h;
 	}
 
 	@Override
-	public double calculatePerimeter(double n) {
-		return 4 * n;
+	public double calculateArea() {
+		return w * h;
+	}
+
+	@Override
+	public double calculatePerimeter() {
+		return 2 * (w + h);
 	}
 	
 }
