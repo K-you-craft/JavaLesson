@@ -34,10 +34,10 @@ public class test9 {
         
         
         double priceOff2 = 0;
-        if(total >= 10000) {
-            priceOff2 = total * 0.1;
-        } else if(total >= 5000) {
-            priceOff2 = total * 0.05;  
+        if(sum >= 10000) {
+            priceOff2 = sum * 0.1;
+        } else if(sum >= 5000) {
+            priceOff2 = sum * 0.05;  
         }
         
         
